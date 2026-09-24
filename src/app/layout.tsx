@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Code Reviews | CodeRabbit | Try for Free.",
+  title: "CodeAnvil — AI Security Reviews for Every PR",
   description:
-    "AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat.",
+    "CodeAnvil automatically reviews every pull request with Semgrep + AI. Catch SQL injection, command injection, and supply chain risks before merge. Zero config.",
   icons: {
-    icon: "https://www.coderabbit.ai/favicon.ico?v=4",
-    shortcut: "https://www.coderabbit.ai/favicon.ico?v=4",
-    apple: "https://www.coderabbit.ai/apple-touch-icon.png?v=4",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
