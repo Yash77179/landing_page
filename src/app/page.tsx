@@ -1,15 +1,14 @@
 import fs from "fs";
 import path from "path";
-import ClientInteractivity from "../components/ClientInteractivity";
 
 export default function Home() {
-  const filePath = path.join(process.cwd(), "src/content/page.html");
-  const htmlContent = fs.readFileSync(filePath, "utf8");
+  const htmlPath = path.join(process.cwd(), "src/content/page-content.html");
+  const html = fs.readFileSync(htmlPath, "utf8");
 
   return (
-    <>
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-      <ClientInteractivity />
-    </>
+    <div
+      dangerouslySetInnerHTML={{ __html: html }}
+      suppressHydrationWarning
+    />
   );
 }
