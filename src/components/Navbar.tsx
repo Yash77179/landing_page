@@ -18,10 +18,10 @@ export default function Navbar() {
           </div>
           <span
             style={{
-              fontFamily: "'Georgia', 'Playfair Display', 'Times New Roman', serif",
-              fontWeight: 700,
-              fontSize: '1.15rem',
-              letterSpacing: '0.22em',
+              fontFamily: "'Cinzel', 'Playfair Display', serif",
+              fontWeight: 800,
+              fontSize: '1.25rem',
+              letterSpacing: '0.2em',
               textTransform: 'uppercase',
               background: 'linear-gradient(90deg, #ffffff 0%, #888 50%, #ffffff 100%)',
               WebkitBackgroundClip: 'text',
