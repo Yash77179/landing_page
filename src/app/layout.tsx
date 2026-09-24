@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "CodeAnvil — AI Security Reviews for Every PR",
@@ -28,8 +29,9 @@ export default function RootLayout({
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body className="antialiased bg-cream-300 dark:bg-neutral-1000 font-sans text-gray-900 dark:text-white transition-colors duration-100">
-        {children}
-      </body>
+          <Navbar />
+          {children}
+        </body>
     </html>
   );
 }
