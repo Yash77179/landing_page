@@ -26,6 +26,9 @@ export default function RootLayout({
       className="geist_89c9bedd-module__2-mPEG__variable hack_8e460d3c-module__nIrdQq__variable lato_c725fdf9-module__2MLKnG__variable relative scroll-pt-32 scroll-smooth motion-reduce:scroll-auto dark"
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body className="antialiased bg-cream-300 dark:bg-neutral-1000 font-sans text-gray-900 dark:text-white transition-colors duration-100">
