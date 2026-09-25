@@ -3,16 +3,67 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 inset-x-0 z-50 h-16 bg-[#0b0b0b] border-b border-white/[0.08] shadow-lg shadow-black/80">
-      <div className="container mx-auto px-6 h-full flex items-center justify-center max-w-7xl">
-        <Link href="/" className="group flex items-center gap-2.5 shrink-0">
-          <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
+    <header
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '4rem',
+        backgroundColor: '#090a0f',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+        boxShadow: '0 10px 30px -5px rgba(0, 0, 0, 0.9)',
+        zIndex: 99999,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+      }}
+    >
+      <div
+        style={{
+          width: '100%',
+          maxWidth: '80rem',
+          paddingLeft: '1.5rem',
+          paddingRight: '1.5rem',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Link
+          href="/"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.625rem',
+            textDecoration: 'none',
+            flexShrink: 0,
+          }}
+        >
+          <div
+            style={{
+              width: '2rem',
+              height: '2rem',
+              borderRadius: '0.5rem',
+              overflow: 'hidden',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
             <Image
               src="/codeanvil-logo.png"
               alt="CodeAnvil"
               width={32}
               height={32}
-              className="w-full h-full object-contain"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+              }}
               priority
             />
           </div>
@@ -29,7 +80,6 @@ export default function Navbar() {
               backgroundClip: 'text',
               transition: 'opacity 0.2s',
             }}
-            className="group-hover:opacity-70"
           >
             CodeAnvil
           </span>

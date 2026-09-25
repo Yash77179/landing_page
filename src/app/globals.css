@@ -1,1 +1,10 @@
 /* CodeRabbit Design System - Loaded via /styles.css */
+
+header {
+  background-color: #090a0f !important;
+}
+
+.site-header-root,
+header[data-site-header="true"] {
+  background-color: #090a0f !important;
+}
